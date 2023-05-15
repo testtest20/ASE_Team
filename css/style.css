@@ -1,0 +1,698 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{position: relative;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    position: fixed;
+    top: 0;
+    
+}
+.logo {
+    
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    margin: 20px 70px;
+}
+.logo h4{
+    font-size: 25px;
+    display: block;
+    cursor: pointer;
+    margin-top: 8px ;
+}
+nav ul{
+    list-style: none;
+    margin-top: 30px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 8px 6px;
+}
+nav ul li:hover{
+    color: #fff;
+    border: 1px solid #000;
+    background-color: #000;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 17px;
+}
+.icon{
+    margin: 20px;
+}
+.icon i{
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* navbar */
+
+.addNewContact{
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 85vh;
+    z-index: 1;
+}
+
+.addNewContact .search{
+    padding: 10px 20px;
+    margin: 0px auto 30px;
+    text-align: left;
+    
+}
+.addNewContact .search i{
+    font-size: 30px;
+    color: #000;
+    padding: 0px 35px;
+}
+.addNewContact .search form input{
+    color: #888;
+    background-color: transparent;
+    padding: 38px 0px;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    opacity: 0.3;
+}
+
+/* search */
+.addNewContact .col {
+    position: relative;
+    float: right;
+    bottom: 110px;
+    right: 70px;
+    
+}
+.addNewContact .col i{
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    right: 10px;
+}
+.addNewContact .d{
+    width: 99.8%;
+    position: relative;
+    bottom: 75px;
+}
+/* addNewContact */
+
+.overlay{
+    background-color: #999;
+    opacity: 0.2;
+    position: fixed;
+    top: 108px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+
+/* overlay */
+
+.user {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 1000px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.user .log{
+    padding: 20px 57px;
+    display: flex;
+}
+.user .log i{
+    cursor: pointer;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.user .log h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    padding-top: 12px;
+    padding-left: 23px;
+}
+.user .login p{
+    text-align: justify;
+    padding: 18px 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    font-size: 15px;
+}
+.user .login form{
+    padding: 18px 55px;
+}
+.user .login form input{
+    display: block;
+}
+input[type=email],input[type=password]{
+    width: 92%;
+    padding: 10px 20px;
+    border: 1px solid #999;
+    border-radius: 23px;
+    outline: none;
+    font-size: 15px;
+}
+input[type=email]::placeholder,input[type=password]::placeholder{
+    color: #000;
+    font-size: 15px;
+}
+input[type=email]{
+    margin-bottom: 15px;
+}
+input[type=submit]{
+    background-color: #000;
+    width: 103%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 23px;
+    outline: none;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 62px;
+    cursor: pointer;
+}
+.user .login h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: underline;
+    position: relative;
+    left: 320px;
+    bottom: 93px;
+    cursor: pointer;
+}
+
+.user .login .account{
+    display: flex;
+    padding: 5px 80px;
+}
+.user .login .account h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.user .login .account h5{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 8px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+/* user */
+
+.over{
+    background-color: #999;
+    opacity: 0.2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 465px;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+/* over */
+
+.wish_list{
+    display: none;
+    text-align: center;
+    background-color: #fff;
+    position: fixed;
+    top: 106px;
+    left: 0px;
+    right: 0;
+    bottom: 35vh;
+    z-index: 1;
+}
+.wish_list .closew i{
+    cursor: pointer;
+    position: relative;
+    float: right;
+    top: 40px;
+    right: 80px;
+}
+.wish_list h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #000;
+    font-size: 22px;
+    position: relative;
+    top: 58px;
+    right: 75px;
+}
+.wish_list form{
+    position: relative;
+    left: 480px;
+    top: 100px;    
+}
+.wish_list form input{
+    display: block;
+}
+.wish_list input[type=email],.wish_list input[type=password]{
+    width: 31%;
+    padding: 13px 20px;
+    border: 1px solid #999999a3;
+    border-radius: 23px;
+    outline: none;
+    font-size: 13px;
+}
+.wish_list input[type=email]::placeholder,.wish_list input[type=password]::placeholder{
+    color: #000;
+    font-size: 15px;
+}
+.wish_list input[type=email]{
+    margin-bottom: 15px;
+}
+.wish_list input[type=submit]{
+    background-color: #000;
+    width: 34%;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 23px;
+    outline: none;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 62px;
+    cursor: pointer;
+}
+.wish_list h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-decoration: underline;
+    position: relative;
+    left: 190px;
+    top: 8px;
+    opacity: .9;
+    cursor: pointer;
+}
+
+.wish_list .wi{
+    display: flex;
+    padding: 5px 90px;
+    opacity: .9;
+    position: relative;
+    top: 105px;
+    left: 500px;
+}
+.wish_list .wi h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+.wish_list .wi h5{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 8px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;
+}
+/* wish list */
+
+#home .de{
+    
+    margin: 125px 70px;
+}
+#home .de p{
+    display: inline-block;
+}
+#home .de .h , #home .de .d{
+    
+    cursor: pointer;
+    font-size: 15px;
+}
+#home .de .hh{
+    font-size: 18px;
+}
+
+#home .dermat{
+    text-align: center;
+    position: relative;
+    bottom: 90px;
+    height: 6vh;
+}
+#home .dermat h1{
+    font-size: 32px;
+    font-family: Calibri;
+    font-weight: lighter;
+}
+#home .dermat p{
+    width: 43%;
+    text-align:inherit;
+    margin:15px  410px;
+    
+}
+
+/*  Home & Dermatique */
+
+#rewards{
+    background-color: #000;
+    width: 10%;
+    height: 8vh;
+    border-radius: 30px;
+    position: fixed;
+    top: 675px;
+    left: 20px;
+}
+#rewards img{
+    background-color: antiquewhite;
+    border-radius: 30px;
+    position: relative;
+    left: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+#rewards h3{
+    text-align: right;
+    color: antiquewhite;
+    position: relative;
+    right: 15px;
+    bottom: 15px;
+    cursor: pointer;
+    font-family: Calibri;
+}
+/* rewards */
+
+#products {
+    height: 216vh;
+}
+#products .left_hand {
+    
+    display: grid;
+    grid-template-columns:   repeat(4 , 2fr);
+    column-gap: 30px;
+    margin-left:  30px;
+    position: sticky;
+    top: 106.5px;
+}
+#products .left_hand .pro {
+    list-style: none;
+}
+#products .left_hand .pro li{
+    font-size: 22px;
+    padding: 10px 30px;
+    font-family: Calibri;
+}
+#products .left_hand .pro .mli{
+    margin-top: 30px;
+}
+#products .left_hand .pro .categ{
+    font-size: 17px;
+    cursor: pointer;
+}
+#products .left_hand .pro li i{
+    padding-left: 110px;
+}  
+#products .left_hand .pro .u{
+    width: 75%;
+    margin: 10px 25px;
+}
+/* left_hand */
+#products .sortby{
+    font-size: 20px;
+    padding: 10px 30px;
+    position: relative;
+    float: right;
+    bottom: 80px;
+    right: 50px;
+    font-family: Calibri;
+    cursor: pointer;
+}
+#products .sortby i{
+    margin-left: 65px;
+    font-size: 15px;
+}
+#products .sbs{
+    margin-top: 20px;
+}
+/* sort by */
+#products .right_hand {
+    margin-left: 370px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    column-gap: 50px;
+}
+#products .right_hand .pro img{
+    border-radius: 12px;
+    cursor: pointer;
+}
+#products .right_hand .pro p{
+    font-family: Calibri;
+    padding-top: 8px;
+    cursor: pointer;
+}
+#products .right_hand .pro h5{
+    font-family: Calibri;
+    font-size: 17px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+#products .right_hand .pro i{
+    position: relative;
+    bottom: 40px;
+    left: 198px;
+    cursor: pointer;
+}
+#products .right_hand .pro .btn{
+    padding: 10px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    border: .4px solid #d0ceced6;
+    margin-top: 15px;
+}
+#products .right_hand .pro .btn pre{
+    display: inline-block;
+    margin-left: 53px;
+}
+#products .right_hand .pro .btn:hover {
+    border: none;
+    background-color: rgba(234, 182, 182, 0.385);
+}
+#products .right_hand .pro .btn pre:hover{
+    background-color: rgba(234, 182, 182, 0.162);
+}
+/* sec1 */
+#products .sec2{
+    margin-top: 60px;
+}
+#products .sec2 .pro5 h5{
+    font-style: inherit;
+    width: 90%;
+}
+#products .sec2 .pro5 .sei{
+    position: relative;
+    bottom: 110px;
+    left: 210px;
+}
+#products .sec2 .pro5 .btn{
+    position: relative;
+    top: 15px;    
+}
+#products .sec2 .pro p{
+    margin-top: 5px;
+}
+#products .sec2 .pro i{
+    position: relative;
+    bottom: 67px;
+}
+#products .sec2 .pro6 .btn,#products .sec2 .pro7 .btn,#products .sec2 .pro8 .btn{
+    position: relative;
+    top: 55px;
+}
+/* sec2 */
+#products .sec3{
+    margin-top: 50px;
+}
+#products .sec3 .pro9 i{
+    position: relative;
+    bottom: 67px;
+}
+#products .sec3 .pro10 h5{
+    width: 80%;
+}
+#products .sec3 .pro11 h5, #products .sec3 .pro12 h5{
+    width: 80%;
+}
+#products .sec3 .pro10 i{
+    position: relative;
+    bottom: 110px;
+}
+#products .sec3 .pro11 i, #products .sec3 .pro12 i{
+    position: relative;
+    bottom: 85px;
+}#products .sec3 .pro9 .btn{
+    position: relative;
+    top: 46px;
+}
+#products .sec3 .pro10 .btn{
+    position: relative;
+    top: 5px;
+}
+#products .sec3 .pro11 .btn, #products .sec3 .pro12 .btn{
+    position: relative;
+    top: 24px;
+}
+#products .view{
+    text-align: center;
+    margin-left: 370px;
+    margin-top: 65px;
+    font-family: Calibri;
+}
+/* sec3 */
+/* right_hand */
+/* products */
+#sign_up{
+    background-color: rgba(245, 220, 220, 0.884);
+    height: 33vh;
+    margin-top: 190px;
+}
+#sign_up h2{
+    padding: 50px 60px  ;
+    font-family: Calibri;
+    font-style:unset;
+    font-size: 30px;
+}
+#sign_up p{
+    width: 30%;
+    padding-left: 500px;
+    position: relative;
+    bottom: 90px;
+    font-size: 15.8px;
+    font-family: Calibri;
+}
+#sign_up .form #email{
+    border: none;
+    background-color: rgba(245, 220, 220, 0.884);
+    position: relative;
+    left: 60px;
+    bottom: 40px;
+    outline: none;
+}
+
+#sign_up .form #email::placeholder{
+    color: #000;
+    font-size: 15px;
+}
+#sign_up .form i{
+    position: relative;
+    float: right;
+    right: 470px;
+    bottom: 39px;
+    font-style:unset;
+    font-weight: 400px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#sign_up .form .m{
+    width: 63%;
+    color: #000;
+    position: relative;
+    left: 65px;
+    bottom: 45px;
+}
+#sign_up .icons ul{
+    display: flex;
+    position: relative;
+    float: right;
+}
+#sign_up .icons ul li{
+    list-style: none;
+}
+#sign_up .icons ul li a i{
+    color: #000;
+    font-size: 20px;
+    padding-right: 20px;
+    position: relative;
+    bottom: 90px;
+    right: 40px;
+}
+/* sign up */
+
+#source_beauty{
+    width: 100%;
+    color: #ccc;
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 30px;
+    height: 45vh;
+}
+#source_beauty img{
+    position: relative;
+    top: 40px;
+    border-radius: 120px;
+}
+#source_beauty h2{
+    display: grid;
+    grid-template-columns: 3fr;
+    width: 140%;
+    text-align: justify;
+    font-family: Calibri;
+    position: relative;
+    right: 120px;
+    top: 68px;
+}
+#source_beauty ul{
+    list-style: none;
+}
+#source_beauty .about .ab a{
+    cursor: auto;
+    position: relative;
+    bottom: 20px;
+}
+#source_beauty .about li{
+    position: relative;
+    top: 80px;
+    left: 140px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+#source_beauty ul li a{
+    text-decoration: none;
+    color: #ccc;
+}/* about */
+#source_beauty .customer .care {
+    cursor: auto;
+    position: relative;
+    bottom: 20px;
+}
+#source_beauty .customer li{
+    position: relative;
+    top: 80px;
+    left: 70px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}/* customer */
+#source_beauty .legal .lg {
+    cursor: auto;
+    position: relative;
+    bottom: 20px;
+}
+#source_beauty .legal li{
+    position: relative;
+    top: 80px;
+    right: 0px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}/* legal */
+#source_beauty p{
+    width: 150%;
+    position: relative;
+    left: 60px;
+    padding-top: 70px;
+}
+/* source beauty */
