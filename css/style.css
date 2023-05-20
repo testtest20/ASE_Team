@@ -8,7 +8,7 @@ nav{position: relative;
     width: 100%;
     border-bottom: 1px solid #ccc;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 2fr 6fr 2fr;
     position: fixed;
     top: 0;
     
@@ -33,7 +33,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    padding: 8px 6px;
+    padding: 8px 4.1px;
 }
 nav ul li:hover{
     color: #fff;
