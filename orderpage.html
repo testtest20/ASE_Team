@@ -1,0 +1,61 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Home & Dermatique -->
+    <section id="home" class="home">
+        <div class="de">
+            <p class="h"> Home </p>
+            <p class="hh">|</p>
+            <p class="d"> Dermatique </p>
+        </div>
+        <div class="dermat">
+            <h1> Dermatique </h1>
+            <p>Dermatique is formulated to suit the most sensitive skin. All products are enriched with Inhipase™
+                sensitive skin technology to soothe, hydrate and reduce inflammation. The advanced and specialized
+                formulas ensure high efficacy and safety standards to suit your every need.</p>
+        </div>
+    </section>
+    <!-- end Home & Dermatique -->
+          <!-- Products -->
+
+          <section id="products" class="products">
+            <!-- left_hand -->
+            <div class="left_hand">
+                <ul class="pro">
+                    <li class="mli">Filter Products</li>
+                    <hr class="u">
+                    <li class="categ" >Product Category <i class="">{{cat.id}}</i>>></li>
+                    {% for i in cat|slice:'3' %}
+                    <a style="text-decoration: none;padding: 30px; color: #000;" id="" class="" href="#" >{{i.name}}</a>
+                    <hr class="u">
+                    {% endfor %}
+                    <li class="categ">Shop by Ingredint <i class=""></i>>></li>
+                    <hr class="u">
+                </ul>
+            </div>
+            <!-- end left_hand -->
+            <h4 class="sortby"> Sort by:Best selling <i class="">>></i>
+                <hr class="sbs">
+            </h4>
+            <!-- sort by -->
+            <!-- right_hand -->
+            <div class="right_hand">
+                {% for i in med %}
+                <div class="pro pro1" producthide product{{product.category.id}}>
+                    <img src="{{i.medicine_photo.url}}" width="220"
+                        height="300" alt="">
+                    <p>Dermatique</p>
+                    <h5>{{i.name}}</h5>
+                    <i class="">*</i>
+                    <button class="btn"> Add to bag
+                        <pre>{{i.price}}</pre>
+                    </button>
+                </div>
+            {% endfor %}
+            <!-- end right_hand -->
+        </section>
+        
+        <!-- end products -->      
+{% endblock %} 
+

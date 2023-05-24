@@ -8,7 +8,7 @@ nav{position: relative;
     width: 100%;
     border-bottom: 1px solid #ccc;
     display: grid;
-    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-columns: 1fr 2fr 4fr;
     position: fixed;
     top: 0;
     
@@ -33,7 +33,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    padding: 8px 4.1px;
+    padding: 8px 6px;
 }
 nav ul li:hover{
     color: #fff;
@@ -44,10 +44,11 @@ nav ul li:hover{
     font-size: 17px;
 }
 .icon{
-    margin: 20px;
+    width: 100%;
+    position: relative 50px;
 }
 .icon i{
-    padding: 15px;
+    padding: 10px;
     font-size: 20px;
     cursor: pointer;
 }
@@ -387,6 +388,7 @@ input[type=submit]{
 /* rewards */
 
 #products {
+    display: inline-block;
     height: 216vh;
 }
 #products .left_hand {
@@ -394,7 +396,7 @@ input[type=submit]{
     display: grid;
     grid-template-columns:   repeat(4 , 2fr);
     column-gap: 30px;
-    margin-left:  30px;
+    margin-left: 30px;
     position: sticky;
     top: 106.5px;
 }

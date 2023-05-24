@@ -1,0 +1,76 @@
+{% load static %}
+<div class="addNewContact">
+    <div class="search">
+        <form  method="GET" action="{% url 'orderpage' %}">
+            <label for="search">
+                <i class="">O</i>
+            </label>
+            <input type="search" name="search" id="search" placeholder="Type To Search ">
+        </form>
+    </div><!-- search -->
+    <div class="col close">
+        <i class="">X</i>
+    </div>
+    <hr class="d">
+</div><!-- addNewContact -->
+
+<div class="overlay">
+
+</div> <!-- over lay -->
+
+<section class="user">
+    <div class="log">
+        <div class="shut">
+            <i class="">#</i>
+        </div>
+
+        <h3>Login</h3>
+    </div><!-- log -->
+    <hr>
+    <div class="login">
+        <p>Hello Beautiful, we have migrated to a new website! If you had an account on our previous website please
+            reset your password. If you are new here we would love if you could create a new account so we can have
+            your details and provide a faster checkout for you!</p>
+
+        <form action="">
+            <input type="email" name="email" id="email" placeholder="Email address">
+            <input type="password" name="paeeword" id="password" placeholder="Password">
+            <input type="submit" value="Login" class="sub">
+        </form>
+        <h6> Forget Password?</h6>
+        <div class="account">
+            <h4>Don't have an account?</h4>
+            <h5>Creat an account </h5>
+        </div>
+
+    </div><!-- login -->
+</section><!-- user -->
+
+<div class="over"></div>
+<!-- over -->
+
+<section class="wish_list">
+    <div class="closew">
+        <i class="">X</i>
+    </div>
+    <h3>Sign in to manage your wish list</h3><hr style="width:33.5%;position:relative;top:82px;left:480px;opacity:.6;">
+    <form action="">
+        <input type="email" name="email" id="email" placeholder="Email address">
+        <input type="password" name="paeeword" id="password" placeholder="Password">
+        <input type="submit" value="Login" class="sub">
+    </form>
+    <h6> Forget Password?</h6>
+    <div class="wi">
+        <h4>Don't have an account?</h4>
+        <h5>Creat an account </h5>
+    </div>
+
+</section><!-- wish list -->
+
+
+<!-- rewards -->
+<div id="rewards">
+    <img src="{% static 'images/Free Shopping Bag Icon.png' %}" alt="" width="35" height="32">
+    <h3>Rewards</h3>
+</div>
+<!-- end rewards -->

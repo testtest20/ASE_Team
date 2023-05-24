@@ -53,3 +53,14 @@ addWishList.addEventListener('click', openwish);
 closew.addEventListener('click', closewish);
 
 //wish_list
+
+
+{% for product in orderpage %}
+
+$(".cat{{product.category.id}}").click(function(){
+   $(".producthide").hide()
+   $(".product{{product.category.id}}").show()
+});
+
+
+{% endfor %}
